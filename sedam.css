@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.seda{
+    display: none;
+}
+.navbar{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.menu_item{
+    padding: 13px;
+}
+.menu{
+    font-weight: 600;
+    color: rgb(29, 4, 61);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 0.9em;
+}
+.menu:hover{
+    color:rgb(252, 113, 18);
+}
+.icon_up{
+    display: none;
+}
+
+.nav_dropdown{
+    position: absolute;
+    width: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+    top: 70px;
+    background-color: white;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.nav_dropdown::before{
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 4px 25px 10px rgba(0, 0, 0, 0.144);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    z-index: -99;
+}
+.nav_dropdown li{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    right: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.nav_dropdown li a{
+    text-decoration: none;
+    color: rgb(158, 154, 154);
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    display: inline-block;
+    font-weight: 500;
+}
+.istifadeci{
+    padding-top: 20px;
+}
+.nav_dropdown li:hover a{
+    color: blue;
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+.nav_dropdown li:nth-child(2){
+    border-top: 0.5px solid rgba(128, 128, 128, 0.233);
+}
+.nav_dropdown li:nth-child(3){
+    border-top: 0.5px solid rgba(128, 128, 128, 0.233);
+    margin-bottom: 10px;
+}
+.menu_item:hover > ul{
+    display: block;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.menu_drop{
+    display: flex;
+}
+.menu_drop ion-icon{
+    margin-top: 10px;
+    color: rgb(252, 113, 18);
+    cursor: pointer;
+}
+.Qeydiyyat{
+    font-weight: 600;
+    color: rgb(29, 4, 61);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.Qeydiyyat:hover{
+    color: rgb(252, 113, 18);
+}
+.Daxil{
+    padding: 11px 20px;
+    background: rgb(252, 113, 18);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.Daxil:hover{
+    background: rgb(252, 113, 18);
+}
+.header{
+    height: 80vh;
+    background: #b033d25d;
+    display: flex;
+    align-items: center;
+}
+.video-bg{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.menu-video h1{
+    color: white;
+    font-weight: 800;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.menu-video h6{
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.input-group{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.input-group button{
+    background: white;
+}
+.menu-input{
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.menu-input::placeholder{
+    font-weight: 600;
+    opacity: 0.7;
+}
+.menu-input:focus{
+    outline: none;
+}
+.menu-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu-text li{
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+    background-color: rgba(255, 250, 250, 0.2);
+    color: white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    letter-spacing: 1px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.work h2{
+    color: rgb(26, 39, 78);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 20px;
+}
+.boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.boxs img{
+    margin-top:50px;
+    width: 18%;
+}
+.boxs .img2{
+    margin-top: 40px;
+}
+.boxs h5{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: rgb(45, 67, 121);
+}
+.boxs p{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 67, 121);
+    font-size: 0.9em;
+}
+.boxs span{
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 13px;
+    font-weight: 600;
+    color: rgb(252, 113, 18);
+    background-color: rgb(254, 227, 208);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.kalk{
+    height: 90vh;
+    background: #fff5f2;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.kalk .row{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.kalkulator{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.kalkulator h1{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(29, 4, 61);
+    font-weight: 600;
+    font-size: 2em;
+}
+.kalkulator p{
+    color: rgb(26, 39, 78);
+    font-family: 'DM Sans', sans-serif;
+}
+.kalkulator button{
+    padding: 15px 40px;
+}
+.kalkulator button{
+    border-color: rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+.kalkulator button:hover{
+    background: rgb(26, 188, 156);
+    border-color: rgb(26, 188, 156);
+}
+.hesabla{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.hesab{
+    padding: 15px;
+    margin-top: 15px;
+}
+.hesab-buton{
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgb(252, 113, 18);
+    color: white;
+    font-family: 'DM Sans' sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.hesab-h1{
+    font-family: 'DM Sans' sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: rgb(29, 4, 61);
+    text-align: center;
+}
+.tarif-item h1{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: black;
+}
+.tarif-item p{
+    color: rgb(29, 4, 61);
+    font-family: 'DM Sans' sans-serif;
+}
+.mehsul{
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mehsul h1{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.mehsul h1 > sup{
+    font-weight: 400;
+    color: gray;
+    font-size: 0.5em;
+}
+.mehsul p{
+    color: rgb(29, 4, 61);
+}
+.wrapper{
+    background: #fff5f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .carusel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carusel .cart{
+    text-align: center;
+    color: #fff;
+    margin: 30px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+}
+.owl-dot{
+    height: 5px;
+    width: 50px;
+    background-color: rgba(252, 112, 18, 0.623) !important;
+    margin: 0 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    z-index: 99;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.owl-dot:hover{
+    background-color: rgb(252, 113, 18) !important;
+}
+.owl-dot:active{
+    background-color: rgb(252, 113, 18) !important;
+}
+.menu-end{
+    background-color: rgb(3, 34, 53);
+}
+.end-logo p{
+    color: rgb(125, 167, 174);
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.end-logo span{
+    color: rgb(125, 167, 174);
+}
+.end-logo span i{
+    margin: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.end-logo span i:hover{
+    color: white;
+}
+.menu-son h1,
+.komek-son h1,
+.elaqe-son h1{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+}
+.menu-son p,
+.komek-son p,
+.elaqe-son p{
+    color: rgb(125, 167, 174);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9em;
+    margin-top: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+.menu-son p:hover{
+    color: white;
+}
+.komek-son p:hover{
+    color: white;
+}
+.elaqe-son p:hover{
+    color: white;
+}
+.zeynalli h6{
+    color: rgb(125, 167, 174);
+    font-family: 'DM Sans' , sans-serif;
+    font-size: 0.8em;
+}
+
+/* ?--------------------------------------RESPONSIVE----------------------------------------------*/
+
+@media only screen and (max-width: 990px){
+    .offcanvas-body{
+        background: rgb(43, 43, 53);
+    }
+    .offcanvas-title{
+        visibility: hidden;
+    }
+    .menu_item{
+        padding: 1px;
+        border-top: 0.5px solid rgba(128, 128, 128, 0.377);
+        width: 100%;
+    }
+    .menu_item:nth-child(1){
+        border-top: none;
+    }
+    .menu_item:nth-child(5){
+        border-bottom: 0.5px solid rgba(128, 128, 128, 0.377);
+    }
+    .menu{
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+    .menu_link{
+        width: 108%;
+        position: relative;
+        left: -15px;
+    }
+    .menu{
+        margin-left: 20px;
+    }
+    .menu_drop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu_drop ion-icon{
+        position: relative;
+        right: 15px;
+    }
+    .Qeydiyyat{
+        color: #fff;
+        font-weight: 500;
+    }
+    .Qeydiyyat:hover{
+        color: rgb(252, 113, 18);
+    }
+    .offcanvas{
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .nav_dropdown{
+        display: none;
+        position: relative;
+        margin-top: 0;
+        background: none;
+        width: 100%;
+        top: 0;    
+}
+    .istifadeci{
+        padding-top: 0;
+    }
+    .nav_dropdown li{
+        padding: 5px;
+        width: 113%;
+        position: relative;
+        right: 35px;
+    }
+    .nav_dropdown li a{
+        position: relative;
+        left: 20px;
+    }
+    .nav_dropdown li:hover a{
+        color: blue;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    .menu_drop:hover > ul{
+        display: none;
+    }
+    .menu-video h1{
+        font-size: 0.7em;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .kalk{
+        height: 110vh;
+    }
+    .kalk .row{
+        height: 110vh;
+    }
+    .kalkulator h1{
+        font-size: 1.3em;
+    }
+    .tarif-item h1{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .seda{
+        display: block;
+    }
+    .daxil_ol{
+        width: 45%;
+        padding: 15px;
+        margin: 5px;
+        background-color: rgb(3, 34, 53);
+        border-radius: 5px;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .qeydiyyat_ol{
+        width: 45%;
+        padding: 15px;
+        margin: 5px;
+        background-color: rgb(252, 113, 18);
+        border-radius: 5px;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .sifaris_et{
+        width: 95%;
+        padding: 10px;
+        margin: 2px;
+        border: 1px solid rgb(252, 113, 18);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        text-align: center;
+        color: rgb(252, 113, 18);
+        font-weight: 600;
+    }
+    .menu-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-text li{
+        margin: 10px;
+    }
+    .kalkulator{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .hesabla{
+        margin-top: 20px;
+    }
+    .owl-dots{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 411px){
+    .menu-text li:nth-child(4){
+        position: relative;
+        right: 5px;
+    }
+}
